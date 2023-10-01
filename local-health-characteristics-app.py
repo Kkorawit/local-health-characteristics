@@ -16,7 +16,7 @@ Asthma = st.slider("Asthma", min_value=1, max_value=120, value=60)
 # Create a DataFrame with the user input
 example_data = pd.DataFrame([[Hypertens, Anxiety, Asthma]], columns=features)
 # Make predictions
-predicted_charges = loaded_model.predict(example_data)
+predicted_CHD = loaded_model.predict(example_data)
 # Display the prediction
 st.write(f"Predicted CHD: ${predicted_CHD[0]:.0f}")
 # Add calculation of Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
