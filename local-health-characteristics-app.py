@@ -18,7 +18,7 @@ example_data = pd.DataFrame([[Hypertens, Anxiety, Asthma]], columns=features)
 # Make predictions
 predicted_charges = loaded_model.predict(example_data)
 # Display the prediction
-st.write(f"Predicted CHD: ${predicted_CHS[0]:.0f}")
+st.write(f"Predicted CHD: ${predicted_CHD[0]:.0f}")
 # Add calculation of Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
 actual_CHD = 100 
 # Replace with the actual charges if available
